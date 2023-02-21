@@ -1,0 +1,12 @@
+EXE_INC = \
+    -I./../transportModels/lnInclude \
+    -I./../twoPhaseModels/twoPhaseMixture/lnInclude \
+    -I./../twoPhaseModels/incompressibleTwoPhaseMixture/lnInclude \
+    -I$(LIB_SRC)/finiteVolume/lnInclude \
+    -I$(LIB_SRC)/meshTools/lnInclude
+
+LIB_LIBS = \
+    -lfiniteVolume \
+    -lmeshTools \
+    -L$(FOAM_USER_LIBBIN) 
+
